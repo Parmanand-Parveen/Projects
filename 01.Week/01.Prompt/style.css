@@ -1,0 +1,117 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 80vmax;
+    height: 40vmax;
+    -webkit-box-shadow: 3px -9px 49px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px -9px 49px -5px rgba(0,0,0,0.75);
+    box-shadow: 3px -9px 49px -5px rgba(0,0,0,0.75);
+    padding: 0vmax 4.5vmax;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_title{
+    font-size: 5vmax;
+    margin-bottom: 1.5vmax;
+    font-family: 'Courier New', Courier, monospace;
+    color: #4F75FF;
+}
+
+.left_title span{
+    color: #6439FF;
+    
+}
+
+.left >p{
+    text-align: center;
+    margin-bottom: 1.2vmax;
+    color: #4F75FF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+.left_text{
+    color: #6439FF;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vmax;
+    margin-left: 3vmax;
+
+}
+
+.right >h1{
+    font-size: 3vmax;
+    margin-bottom: 1vmax;
+    color: #6439FF;
+}
+
+
+
+.right >p{
+    color: #4F75FF;
+    margin-bottom: .8vmax;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: .5vmax;
+    margin-bottom: 1vmax;
+}
+
+.btns{
+    display: flex;
+}
+
+button{
+    padding: .5vmax 1.5vmax;
+    margin-right: 1vmax;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1vmax;
+    margin-bottom: 1vmax;
+}
+
+.submit{
+    background-color: #6439FF;
+    color: white;
+}
+
+.cancel{
+    border: 1px solid #6439FF;
+    background-color: white;
+    color: #6439FF;}

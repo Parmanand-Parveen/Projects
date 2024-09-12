@@ -1,0 +1,35 @@
+@media screen and (max-width: 600px) {  
+    .container{
+        padding: 0;
+    margin: 0;
+    flex-direction: column;
+      box-shadow: none;
+      gap: 14vh;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .right{
+       padding: 2vw;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .right >h1{
+        font-size: 9vw;
+    }
+
+    .right >p{ 
+      margin-bottom: 3vw;
+     }
+    input{
+        margin-bottom: 3vw;
+    }
+    button{
+        font-size: 3vw;
+        padding: 2vw 6vw;
+        margin-bottom: 3vw;
+    }
+}

@@ -1,0 +1,49 @@
+<!-- #002 Prompt: Credit Card Checkout
+
+Design a credit card checkout form or page. Don't forget the important elements such as the numbers, dates, security numbers, etc. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Checkout</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+
+  <div class="body">
+    <div class="container">
+      <div class="credit-card" onclick="this.classList.toggle('flipped')">
+        <div class="front">
+          <img
+            src="https://e7.pngegg.com/pngimages/318/114/png-clipart-debit-card-stored-value-card-prepayment-for-service-payment-card-credit-card-black-business-card-design-label-payment.png"
+            alt="">
+        </div>
+        <div class="back">
+          <img src="https://images.expertmarket.co.uk/wp-content/uploads/sites/2/2023/07/cvv.png" alt="">
+        </div>
+      </div>
+      <form>
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+        <br>
+        <label for="name-on-card">Name on Card</label>
+        <input type="text" id="name-on-card" name="name-on-card" placeholder="John Doe">
+        <br>
+        <label for="expiry-date">Expiry Date</label>
+        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+        <br>
+        <label for="cvv">CVV</label>
+        <input type="password" id="cvv" name="cvv" placeholder="***">
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

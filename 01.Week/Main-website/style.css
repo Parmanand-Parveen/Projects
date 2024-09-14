@@ -1,0 +1,397 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: black;
+    color: white;
+}
+
+#menu{
+    display: none;
+}
+
+.nav_right{
+    display: flex;
+    align-items: center;
+}
+
+.nav_right img{
+    width: 8rem;
+    margin-right: 1rem;
+}
+
+.nav_link{
+    display: flex;
+    font-size: 1.02vmax;
+    gap: 2rem;
+}
+
+a{
+    color: #6A6F74;
+    text-decoration: none;
+    font-size: 1.25vmax;
+    transition: .25s;
+}
+a:hover{
+    color: #FF2D00;
+}
+
+.nav_left{
+    display: flex;
+    align-items: center;
+    font-size: 1.5vmax;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.page1{
+    margin-top: 10vh;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("https://media.istockphoto.com/id/1144740142/photo/close-up-of-spray-or-perfume-of-indian-jasmine-flower-or-juhi-or-jasminum-auriculatum-on.jpg?s=612x612&w=0&k=20&c=LQVUusHcjpqpkIQj84maJyBwdkF8nolbZGFXfzsE2ok=");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.text{
+    position: absolute;
+    left: 10%;
+    gap: 1rem;
+    color: white;
+}
+
+.text h1{
+    font-size: 5vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text p{
+    font-size: 1.5vmax;
+    margin-bottom: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text h1 span{
+    color: #FF2D00;
+}
+
+.text button{
+    width: 10rem;
+    height: 3rem;
+    border-radius: .2rem;
+    background-color: #FF2D00;
+    border: none;
+    color: white;
+    font-size: 1.5vmax;
+    cursor: pointer;
+}
+
+.page2{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+}
+.page2 h1{
+    font-size: 3vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2rem 0rem;
+}
+
+
+.product{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 17rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.card img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content button{
+    border-radius: .2rem;
+    background-color: #FF2D00;
+    border: none;
+    color: white;
+    font-size: 1.5vmax;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.view{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vmax;
+    background-color: black;
+    color: white;
+    padding: .5rem;
+    border-radius: .2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.page3{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.new_launch{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.new_launch img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.overlay2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.45;
+}
+
+.page3 h1{
+    font-size: 3vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2rem 0rem;
+    position: absolute;
+    width: 30%;
+    color: white;
+    top: 40%;
+    left: 55%;  
+}
+
+.page3 h1 span{
+    color: #FF2D00;
+}
+
+.page4{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    align-items: center;
+}
+
+.page4 h1{
+    font-size: 3vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.page5{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.page5 h1{
+    font-size: 3vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2rem 0rem; 
+}
+
+button{
+    cursor: pointer;
+}
+
+.about{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.about .img{
+    width: 40%;
+    object-fit: cover;
+    position: relative;
+}
+
+.page5_text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
+    gap: 2rem;
+}
+
+.page5_text p{
+    color: #6A6F74;
+
+    margin-top: 5rem;
+    width: 80%;
+    font-size: 1.5vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.page5_text span{
+    color: #FF2D00;
+}
+
+.page5 h1 span{
+    color: #FF2D00;
+}
+
+.overlay3{
+    width: 120%;
+    height: 100%;
+    top:0;
+    position: absolute;
+    background-color: black;
+    opacity: 0.45;
+}
+
+.page5_text button{
+    background-color: white;
+    border: none;
+    color: Black;
+    align-self: self-start;
+    font-size: 1.5vmax;
+    cursor: pointer;
+    padding: .5rem;
+    margin-left: 5rem;
+}
+
+footer{
+    width: 100%;
+    background-color: #9B3922;
+    padding: 1rem;
+    color: white;
+    color: black;
+}
+
+.footer{
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    font-size: 1.5vmax;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h1{
+    font-size: 2vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer2 ul{
+    list-style: none;
+    gap: 1rem;
+    font-size: 1.5vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.footer2 ul li a{
+
+    cursor: pointer;
+    color: black;
+}
+
+.footer4 ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer4 ul li:hover{
+    transition: .5s;
+    transform: scale(1.2);
+    cursor: pointer;
+    color: white;
+}

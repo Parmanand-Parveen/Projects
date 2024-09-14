@@ -1,0 +1,125 @@
+@media screen and (max-width: 600px) {
+
+    .nav_link a{
+        display: none;
+    }
+    .nav_left i{
+        display: none;
+    }
+    #menu{
+        display: block;
+        color: white;
+        scale: 1.5;
+    }
+    .text p{
+        font-size: 2vmax;
+    }
+
+    .text button{
+        width: 30vw;
+        height: 5vh;
+        font-size: 1.5vmax;
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .page3{
+        margin-top: 320%;
+        position: relative;
+    }
+    .new_launch{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .page3 h1{
+        font-size: 3vmax;
+        position: absolute;
+        top:15%;
+        width: 40%;
+    }
+
+    .page4{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 1rem;
+       justify-content: center;
+       margin-top: 20rem;
+    }
+
+    .page4 h1{
+        font-size: 5vmax;
+    }
+
+    .page5{
+        height: 100vh;
+        margin-top: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about{
+        width: 100%;
+        display: flex;
+        padding: 0rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .img{
+        height: 50vh;
+        width: 100%;
+        background-size: cover;
+    }
+    .page5_text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem;
+        gap: 1rem;
+    }
+
+    .page5_text p{
+        width: 100%;
+        font-size: 2vh;
+      
+    }
+    .overlay3{
+        display: none;
+    }
+    .page5_text button{
+        align-self: initial;
+        font-size: 1.5vmax;
+        margin: 0;
+    }
+
+   
+
+    .footer{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .footer {
+        font-size: 2.5vmax;
+    }
+    .footer h1{
+        font-size: 3vmax;
+    }
+
+    .footer1{
+        width: 70%;
+    }
+    .footer2 li a{
+        font-size: 2.5vmax;
+    }
+}

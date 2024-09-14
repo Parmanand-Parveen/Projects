@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    color: white;
+}
+
+.cover_img{
+    width: 100%;
+    height: 20vmax;
+    position: relative;
+}
+
+.cover_img img{
+    width: 100%;
+    height: 77%;
+    background-position: top;
+    background-size: cover;
+}
+
+.profile_photo{
+    width: 11vmax;
+    height: 11vmax;
+    position: absolute;
+    bottom: -2%;
+    left: 8%;
+    border: 4px solid black;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.profile_photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover_img button{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    background-color: black;
+    color: white;
+    padding: .5vmax 1.5vmax;
+    border: 1px solid #524B54;
+    border-radius: 2vmax;
+    cursor: pointer;
+    scale: 1.1;
+    font-size: 1vmax;
+    margin-bottom: 1vmax;
+}
+
+.page1{
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+}
+
+.name{
+    font-size: 2.5vmax;
+    margin-top: 2vmax;
+}
+
+.email{
+    font-size: 1vmax;
+    color: #6A6F74;
+    margin-bottom: 2vmax;
+}
+
+.summary{
+    font-size: 1.2vmax;
+    width: 50%;
+    margin-bottom: 1.5vmax;
+}
+
+a{   
+    color: #1B92E2;
+    font-size: 1.02vmax;
+    text-decoration: none;
+}
+
+.date{
+    margin-top: 0.5vmax;
+    color: #6A6F74;
+    font-size: 1.02vmax;
+    margin-bottom: 1.5vmax;
+}
+
+.data{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.02vmax;
+}
+
+.data p{
+    color:white;
+    font-weight: 600;
+}
+
+.data span{
+    color: #6A6F74;
+    font-weight: 600;
+}

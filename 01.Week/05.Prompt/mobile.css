@@ -1,0 +1,42 @@
+@media screen and (max-width: 600px) {
+    
+    .cover_img{
+        height: 30vmax;
+    }
+
+    .profile_photo{
+        width: 15vmax;
+        height: 15vmax;
+    }
+
+    .cover_img button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scale: 1.5;
+    }
+    .name{
+        font-size: 3.5vmax;
+    }
+
+    .email{
+        font-size: 2vmax;
+    }
+
+    .summary{
+        font-size: 2.5vmax;
+        width: 95%;
+    }
+    a{
+        font-size: 2vmax;
+    }
+
+    .date{
+        font-size: 2vmax;
+    }
+
+    .data{
+        width: 50%;
+        font-size: 2vmax;
+    }
+}

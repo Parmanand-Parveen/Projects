@@ -1,0 +1,205 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.backimg {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  z-index: 1;
+  background-image: url(https://plus.unsplash.com/premium_photo-1661873673782-88b30e6abef4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VG9reW98ZW58MHx8MHx8fDA%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 90vh;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  color: white;
+  top: 0;
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.nav-links {
+  display: flex;
+  z-index: 5;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.login {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.hero-text {
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.get-started {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+
+.discount {
+  width: 200vw;
+  background-color: #ff2d00;
+  color: white;
+  display: flex;
+  gap: 9vw;
+}
+
+.discount p {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: crousel 20s infinite linear;
+}
+
+@keyframes crousel {
+  from {
+    transform: translatex(0vw);
+  }
+  to {
+    transform: translatex(-100vw);
+  }
+}
+
+.check {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  padding: 1rem 2rem;
+  gap: 2vh;
+  color: white;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  z-index: 3;
+  margin: auto;
+}
+.joint {
+  display: flex;
+  gap: 5vw;
+}
+
+.joint label {
+  color: #6a6f74;
+  font-size: 1.5rem;
+}
+
+.joint button {
+
+  border: 1px solid #6a6f74;
+  border-radius: 5px;
+}
+
+.joint input {
+  padding: 10px;
+  border: 1px solid #6a6f74;
+  border-radius: 5px;
+}
+
+.joint div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.check-btn{
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+#plane{
+  position: absolute;
+  color: #fff;
+  z-index: 5;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 250px;
+  mix-blend-mode: difference;
+  transform: rotate(45deg);
+ animation: fly 10s infinite linear;
+}
+
+@keyframes fly {
+  from{
+    top:100%;
+    left:-40%
+  }
+  to{
+    top:-20%;
+    left:120%
+  }
+}
+
+.nav-links  ul:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #007bff;
+  transition: .25s;
+}

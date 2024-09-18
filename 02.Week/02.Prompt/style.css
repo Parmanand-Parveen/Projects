@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.slider {
+    width: 100%;
+    height: 90vh;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.slider .slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider .slides .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.slider .slides .slide.active {
+    display: block;
+}
+
+.slider .prev, .slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fff;
+    font-size: 2em;
+    transition: all 0.3s ease;
+}
+
+.slider .prev:hover, .slider .next:hover {
+    color: #000;
+}
+
+.slider .prev {
+    left: 20px;
+}
+
+.slider .next {
+    right: 20px;
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider .dots .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.slider .dots .dot.active {
+    background-color: #000;
+}
+
+h2{
+    text-align: center;
+    font-size: 3.5vmax;
+    background: black;
+    color: white;
+}
+
+.hero{
+    display: flex;
+    gap: 4vw;
+    height: 100%;   
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    padding: 3vw;
+}
+.left
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left h1{
+    font-size: 4.5vmax;
+    color: #fff;
+    margin-bottom: 1.5vmax;
+}
+.left h3{
+    font-size: 2.5vmax;
+    margin-bottom: 1.5vmax;
+}
+.left p{
+    font-size: 1.2vmax;
+    color: #6A6F74;
+    margin-bottom: 1.5vmax;}

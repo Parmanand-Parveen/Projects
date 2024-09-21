@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+    .pricing-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-card {
+        width: 90%;
+    }
+
+    .price {
+        font-size: 2em;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-toggle i {
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .navbar-links {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: #333;
+    }
+
+    .navbar-links li {
+        margin-right: 0;
+    }
+
+    .navbar-links a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid gray;
+    }
+}

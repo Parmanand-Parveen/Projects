@@ -10,6 +10,11 @@ html,body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+.body{
+    width: 100%;
+    height: 100%;
+}
+
 .page1{
     width: 100%;
     height: 45vh;
@@ -18,11 +23,11 @@ html,body{
 footer{
     display: flex;
     width: 100%;
-    height: 55vh;
+  
     background-color: #02021E;
     color: #F5F5F7;
     justify-content: space-around;
-    padding-top: 4rem ;
+    padding: 4rem  0 ;
 }
 .left{
     display: flex;

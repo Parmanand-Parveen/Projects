@@ -1,0 +1,24 @@
+
+ @media (max-width: 768px) {
+    .newsletter-container {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .newsletter-form {
+      flex-direction: column;
+    }
+  
+    .newsletter-form input, .newsletter-form button {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Travel Booking Form</title>
+  <style>
+  
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Book Your Travel</h2>
+    <form id="travelForm">
+      <label for="departure">Departure City:</label>
+      <select id="departure" name="departure" required>
+        <option value="" disabled selected>Select departure city</option>
+        <option value="New York">New York</option>
+        <option value="London">London</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Paris">Paris</option>
+      </select>
+
+      <label for="destination">Destination City:</label>
+      <select id="destination" name="destination" required>
+        <option value="" disabled selected>Select destination city</option>
+        <option value="New York">New York</option>
+        <option value="London">London</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Paris">Paris</option>
+      </select>
+
+      <label for="departureDate">Departure Date:</label>
+      <input type="date" id="departureDate" name="departureDate" required>
+
+      <label for="returnDate">Return Date:</label>
+      <input type="date" id="returnDate" name="returnDate" required>
+
+      <input type="submit" value="Book Now">
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("travelForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const departure = document.getElementById("departure").value;
+      const destination = document.getElementById("destination").value;
+      const departureDate = document.getElementById("departureDate").value;
+      const returnDate = document.getElementById("returnDate").value;
+
+      if (departure === destination) {
+        alert("Departure and destination cities cannot be the same.");
+      } else {
+        alert(`Travel from ${departure} to ${destination} is booked from ${departureDate} to ${returnDate}.`);
+      }
+    });
+  </script>
+
+</body>
+</html>

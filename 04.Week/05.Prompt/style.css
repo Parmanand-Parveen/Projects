@@ -107,3 +107,16 @@ footer {
     color: #fff;
 }
 
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .features {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .feature {
+        flex: 1;
+        margin: 0 1rem;
+        max-width: 300px;
+    }
+}

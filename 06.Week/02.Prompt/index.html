@@ -1,0 +1,50 @@
+ <!-- Design a login form with password visibility toggle feature using CSS. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login Form</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <div class="login-container">
+         <h2>Login to Your Account</h2>
+ 
+         <form action="#" method="POST" class="login-form">
+             <!-- Username -->
+             <div class="form-group">
+                 <label for="username">Username</label>
+                 <input type="text" id="username" name="username" placeholder="Enter your username" required>
+             </div>
+ 
+             <!-- Password -->
+             <div class="form-group password-group">
+                 <label for="password">Password</label>
+                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                 <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
+             </div>
+ 
+             <!-- Submit Button -->
+             <button type="submit" class="login-btn">Login</button>
+         </form>
+     </div>
+ 
+     <script>
+         // Toggle password visibility function
+         function togglePasswordVisibility() {
+             const passwordInput = document.getElementById("password");
+             const passwordIcon = document.querySelector(".toggle-password");
+             
+             if (passwordInput.type === "password") {
+                 passwordInput.type = "text";
+                 passwordIcon.textContent = "👁️";
+             } else {
+                 passwordInput.type = "password";
+                 passwordIcon.textContent = "🙈";
+             }
+         }
+     </script>
+ </body>
+ </html>
+ 

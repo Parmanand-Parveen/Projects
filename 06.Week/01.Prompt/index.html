@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Our Cause</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="donation-container">
+        <h1>Support Our Charity</h1>
+        <p>Your contribution can make a lasting impact!</p>
+
+        <form action="/submit-donation" method="POST" class="donation-form">
+            <!-- Donor's Name -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Donor's Email -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <!-- Donation Amount -->
+            <div class="form-group">
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount (USD)" min="1" required>
+            </div>
+
+            <!-- Payment Method -->
+            <div class="form-group">
+                <label>Payment Method:</label>
+                <div class="payment-options">
+                    <input type="radio" id="credit-card" name="payment" value="credit-card" required>
+                    <img class="payment" src="https://www.icicibank.com/content/dam/icicibank/india/managed-assets/credit-card/Amazoncard.png" alt="">
+                    <label for="credit-card">Credit Card</label>
+
+                    <input type="radio" id="paypal" name="payment" value="paypal" required>
+                    <img class="payment" src="https://w7.pngwing.com/pngs/136/293/png-transparent-paypal-logo.png" alt="">
+                    <label for="paypal">PayPal</label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="donate-btn">Donate Now</button>
+        </form>
+    </div>
+</body>
+</html>

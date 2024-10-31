@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Checkout Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SHOPPING BAG</h1>
+      <nav>
+        <a href="#">Login</a>
+        <a href="#">Search</a>
+        <a href="#">Cart (0)</a>
+      </nav>
+    </header>
+    
+    <div class="content">
+      <!-- Product List -->
+      <div class="product-list">
+        <!-- Product 1 -->
+        <div class="product">
+          <img src="https://anthonysinclair.com/cdn/shop/products/MidGreySharkskin_Thunderball_-1_800x.jpg?v=1654946784" alt="Mid Grey Sharkskin Suit">
+          <div class="product-details">
+            <h2>Mid Grey Sharkskin Suit</h2>
+            <p class="price">$1,930.00</p>
+            <p>Size: 48</p>
+            <p>Color: Gray</p>
+            <div class="quantity">
+              <button class="minus">-</button>
+              <span class="qty">3</span>
+              <button class="plus">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC58brJYaf05JAj1cDdea7KzvVLnuWdJx2tg&s" alt="Brown Prince of Wales Linen Sport Coat">
+          <div class="product-details">
+            <h2>Brown Prince of Wales Linen Sport Coat</h2>
+            <p class="price">$1,455.00</p>
+            <p>Size: 52</p>
+            <p>Color: Brown</p>
+            <div class="quantity">
+              <button class="minus">-</button>
+              <span class="qty">2</span>
+              <button class="plus">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-item">
+          <p>Subtotal</p>
+          <p>$7,245.00</p>
+        </div>
+        <div class="summary-item">
+          <p>Shipping</p>
+          <p>Free</p>
+        </div>
+        <div class="summary-item">
+          <p>Postage</p>
+          <p>$20</p>
+        </div>
+        <div class="summary-total">
+          <p>Total</p>
+          <p>$7,265.00</p>
+        </div>
+        <button class="checkout-btn">CHECK OUT</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
